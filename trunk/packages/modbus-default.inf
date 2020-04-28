@@ -1,0 +1,5 @@
+FIRM='Modbus'
+MODEL='default'
+PROTO='Modbus'
+DESCR='Modbus Base Query Wrapper'
+MODULE='modbus-default'

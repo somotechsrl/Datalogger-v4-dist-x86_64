@@ -1,0 +1,5 @@
+FIRM='Fimer'
+MODEL='HTTP-Rxxxx'
+PROTO='HTTP'
+DESCR='Fimer HTTP Gateway'
+MODULE='fimer-http-gateway'
