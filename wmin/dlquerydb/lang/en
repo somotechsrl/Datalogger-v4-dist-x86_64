@@ -1,0 +1,14 @@
+datalogger=Datalogger Status
+lastdata=Interfaces Last Data
+database=Database Query
+dbsaved=Database Saved Interfaces
+exportcsv=CSV File Exports
+exportxls=Excell File Exports
+return=Database Query
+active=Active Interfaces
+
+apply_dbparams=Refresh Parameters
+apply_dbselect=Extract Data
+apply_extractcsv=Download CSV
+apply_extractxml=Download XML
+apply_extractxls=Download Excel

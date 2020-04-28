@@ -1,0 +1,104 @@
+COMMPAUSE=Pause Pre Run Modules 
+COMMFREQ=Pre Run Modules Frequency (s)
+POLLPAUSE=Pause Device Run Modules 
+POLLFREQ=Device Run Modules Frequency (s)
+SYNCPAUSE=Pause Post Run Sync/Data Modules 
+SYNCFREQ=Post Run Sync/Data Modules Frequency (s)
+MAXQFLUSH=Max Queue Flush In Sync
+DLDESCR=Datalogger Description
+
+polldata=Working Parameters
+licensing=License Management
+register=Register License 
+unregister=Unregster License 
+dlupdate=Firmware Update
+drinstall=Install Module
+dractivate=Enable Interfaces
+drconfig=Configure Interfaces
+dbcleanup=Database Cleanup
+dlidentify=Identify Datalogger
+dbcleanup_warn=ALL DATA WILL BE ERASED
+
+return=Configuration Management
+save=Save Configuration
+working=Working Parameters
+
+apply_lic=Renew License
+apply_lck=Check License
+apply_reg=Register License
+apply_unr=Unregister License
+apply_bck=Return to License Management
+apply_dbselect=Show Data
+apply_dbcleanup=Delete Data
+apply_dbparams=Refresh Parameters
+apply_extractcsv=Download CSV
+apply_dlidentify=Identify Datalogger LED
+
+apply_fwcheck=Check Firmware
+apply_fwupdate=Update Firmware
+apply_module=Select Device
+
+apply_config=Refresh
+create_config=Enable Interface
+delete_config=Disable Checked
+
+apply_install=Refresh
+create_install=Install Checked
+delete_uninstall=Uninstall Selected
+
+save_data=Save Data
+cancel_data=Cancel Device Entry
+create_data=Create Device Entry
+delete_data=Delete Selected Entries
+modify_data=Modify Selected Entry
+apply_data=Return to Current Active Interfaces
+apply_refresh=Refresh Form Data
+apply_module=Select Module Data
+
+drshow=Current Config
+drnoshow=No Config Options
+active=Current Active Interfaces
+nodata=No Data for This Interface
+
+licdlserial=Datalogger ID
+licgenerated=Generation Time 
+lictype=License Generation Type
+licreleased=Release Date
+licexpiration=Expiration Date
+licsha256sum=License ID
+
+Interface=Data Interface
+
+dbmodule=Device Driver
+
+expmode=Export Format
+
+mbserial=Serial Port
+mbspeed=Serial Speed
+mbchannel=Device Channel
+mbaddress=Device Address
+mbdelay=ModBus Delay/Query
+mbsequence=Modbus Sequence
+mboffset=Modbus Register Offset
+
+s7ip=S7 PLC Address
+s7rack=S7 PLC Rack 
+s7slot=S7 PLC Slot
+s7type=Register Type
+s7seq_base=Data Block Address (eg. 1,2-10,11,12)
+s7seq_offset=Data Block Register Offset (eg. 1,2-10,11,12)
+s7length=Number of Registers to read
+
+localproto=Local Protocol
+localport=Local Proxy Port
+daddr=Destination Address
+dport=Destination Port
+ddescr=Destination Descr
+
+Interfaceid=Unique ID
+podid=ID POD
+lat=Latitude
+lng=Longitude
+format=Data Format
+
+remove=Remove Config
