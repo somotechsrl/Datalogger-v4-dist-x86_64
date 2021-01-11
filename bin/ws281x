@@ -21,7 +21,8 @@ def colorWipe(r,g,b):
  
 # Process arguments
 parser = argparse.ArgumentParser()
-parser.add_argument('-c', '--clear', action='store_true', help='clear the display on exit')
+parser.add_argument('-p', '--pin', type=int, help='pin')
+parser.add_argument('-c', '--clear', action='store_true', help='clear')
 parser.add_argument('-r', '--red', action='store_true', help='Set red')
 parser.add_argument('-g', '--green', action='store_true', help='Set green')
 parser.add_argument('-b', '--blue', action='store_true', help='Set blue')
@@ -31,8 +32,17 @@ args = parser.parse_args()
 strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
 # Intialize the library (must be called once before other functions).
 strip.begin()
- 
+
+pin=LED_PIN 
 r=g=b=0
+
+if args.pin:
+	pin=args.pin
+
+# Create NeoPixel object with appropriate configuration.
+strip = Adafruit_NeoPixel(LED_COUNT, pin, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
+# Intialize the library (must be called once before other functions).
+strip.begin()
 
 if args.clear:	
 	wipe=1
