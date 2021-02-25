@@ -5,28 +5,6 @@ use URI::Encode;
 init_config();
 
 
-# hardcoded!!!
-my $filename="/opt/datalogger/etc/datalogger";
-
-# List of fields for this module
-my @flist=[
-	"COMMPAUSE","COMMFREQ",
-	"POLLPAUSE","POLLFREQ",
-	"SYNCPAUSE","SYNCFREQ",
-	"INETPING",
-	"DLDESCR"
-];
-
-sub show_polldata {
-	print ui_form_start('polldata.cgi',"POST");
-	&dataloggerShowConfig(@flist,$filename);
-	print ui_form_end([ [ "command" , $text{'save'} ] ]);
-	}
-
-sub save_polldata {
-	&dataloggerSaveConfig(@flist,$filename);
-	}
-
 sub delete_module_entry {
 
 	my ($module,$row) = @_;
@@ -77,7 +55,9 @@ sub display_module_entry {
 	#$filedata=callDataloggerAPI("iifConfig $module print");
 	#&dataloggerCsvOut($filedata);
 	print &ui_table_end();
-	print &dataloggerApiTableSelect("mconfig $module");
+	if($dlparams) {
+		print &dataloggerApiTableSelect("mconfig $module");
+		}
 	}
 
 sub display_firmware_status {

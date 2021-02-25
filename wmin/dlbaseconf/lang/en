@@ -1,13 +1,18 @@
 COMMPAUSE=Pause Pre Run Modules 
 COMMFREQ=Pre Run Modules Frequency (s)
-POLLPAUSE=Pause Device Run Modules 
-POLLFREQ=Device Run Modules Frequency (s)
+POLLPAUSE=Pause Devices Polling 
+POLLFREQ=Devices Polling Frequency (s)
+POLLAGGR=Devices Polling Aggressive Mode
 SYNCPAUSE=Pause Post Run Sync/Data Modules 
 SYNCFREQ=Post Run Sync/Data Modules Frequency (s)
 MAXQFLUSH=Max Queue Flush In Sync
-INETPING=Ping Inet Accessibility (s)
+INETPING=Ping Inet Accessibility IP/FDQN
 DLDESCR=Datalogger Description
 
+MQTT_USER=MQTT Username
+MQTT_PASS=MQTT Password
+
+rpcconfig=RPC HUB Config
 polldata=Working Parameters
 licensing=License Management
 register=Register License 
@@ -70,8 +75,10 @@ licsha256sum=License ID
 
 Interface=Data Interface
 
-dbmodule=Device Driver
+menabled=Device Module
+msetup=Device Module
 
+dbmodule=Device Driver
 expmode=Export Format
 
 mbserial=Serial Port
